@@ -52,3 +52,11 @@ nav a:nth-child(7) {
     border-radius: 28px;
     padding: 10px 27px;
 }
+
+.container-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* il est possible de mettre la taille ici
+    ou dans le balise parent (max-width)*/
+}
