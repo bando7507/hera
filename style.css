@@ -114,3 +114,24 @@ p {
     color: #fff;
     text-transform: capitalize;
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 15%;
+    background-color: #fff;
+    max-width: 1400px;
+    margin: 150px auto;
+    height: 115px;
+}
+
+.contact p {
+    display: flex;
+    margin: 10px 30px 10px 10px;
+}
+
+.icom-item img {
+    width: 40px;
+    margin-left: 20px;
+}
