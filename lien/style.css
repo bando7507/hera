@@ -19,7 +19,29 @@ body {
 
 .container {
     width: 1400px;
-    height: 700px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255);
     border-radius: 20px;
+    margin-bottom: 200px;
+}
+
+.container-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1250px;
+    padding-top: 40px;
+}
+
+.left {
+    color: rgb(0, 0, 0);
+    width: 500px;
+}
+
+.right {
+    width: 500px;
+}
+
+.right img {
+    width: 550px;
 }
