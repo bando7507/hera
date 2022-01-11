@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'Poppins Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Regular'), url('/font/poppins/Poppins-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Poppins Medium'), url('/font/poppins/Poppins-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Oswald Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Oswald Regular'), url('/font/Oswald/Oswald-Regular.woff') format('woff');
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -39,6 +60,11 @@ body {
 .left {
     color: rgb(0, 0, 0);
     width: 500px;
+}
+
+.left p {
+    font-size: 18px;
+    font-family: 'Oswald Regular';
 }
 
 .right {
@@ -87,12 +113,16 @@ body {
 
 .title {
     font-size: 2em;
+    padding: 10px;
     font-weight: bold;
+    font-family: 'Poppins Medium';
+    text-transform: uppercase;
 }
 
 .txt {
     font-size: 1.25em;
     margin-top: 0.25em;
+    font-family: 'Poppins Medium';
 }
 
 .right img {
@@ -120,6 +150,11 @@ body {
 .left2 {
     width: 550px;
     position: relative;
+}
+
+.right2 p {
+    font-size: 18px;
+    font-family: 'Oswald Regular';
 }
 
 .image__img2 {
@@ -162,16 +197,25 @@ body {
 
 .title2 {
     font-size: 2em;
+    padding: 10px;
     font-weight: bold;
+    font-family: 'Poppins Medium';
+    text-transform: uppercase;
 }
 
 .txt2 {
     font-size: 1.25em;
     margin-top: 0.25em;
+    font-family: 'Poppins Medium';
 }
 
 .right2 {
     width: 500px;
+}
+
+.left3 p {
+    font-size: 18px;
+    font-family: 'Oswald Regular';
 }
 
 .left2 img {
@@ -249,12 +293,15 @@ body {
     font-size: 2em;
     font-weight: bold;
     padding: 10px;
+    font-family: 'Poppins Medium';
+    text-transform: uppercase;
 }
 
 .txt3 {
     font-size: 1.25em;
     margin-top: 0.25em;
     text-transform: capitalize;
+    font-family: 'Poppins Medium';
 }
 
 .right3 img {
@@ -266,8 +313,11 @@ span {
     border-radius: 28px;
     padding: 10px 50px;
     background-color: #fff;
+    background-image: linear-gradient(to right, #FFE652, #ff4949);
 }
 
 span a {
+    text-transform: capitalize;
     color: rgb(0, 0, 0);
+    font-family: 'Poppins Regular';
 }
