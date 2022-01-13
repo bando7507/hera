@@ -2,21 +2,21 @@
     font-family: 'Poppins Medium';
     font-style: normal;
     font-weight: normal;
-    src: local('Poppins Medium'), url('/font/poppins/Poppins-Medium.woff') format('woff');
+    src: local('Poppins Medium'), url('font/poppins/Poppins-Medium.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Poppins Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Poppins Regular'), url('/font/poppins/Poppins-Regular.woff') format('woff');
+    src: local('Poppins Regular'), url('font/poppins/Poppins-Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Oswald Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Oswald Regular'), url('/font/Oswald/Oswald-Regular.woff') format('woff');
+    src: local('Oswald Regular'), url('font/Oswald/Oswald-Regular.woff') format('woff');
 }
 
 * {
@@ -37,7 +37,7 @@ body {
 
 section {
     margin: 0 auto;
-    max-width: 1170px;
+    max-width: 1270px;
 }
 
 section header {
@@ -55,6 +55,40 @@ nav a {
     color: #fff;
     font-family: 'Poppins Medium';
     font-size: 18px;
+    position: relative;
+}
+
+nav a:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    border-radius: 15px;
+    background: #0b77f3;
+    transition: all 0.5s ease;
+}
+
+nav a:hover:before {
+    width: 100%;
+}
+
+nav a:before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav a:nth-child(3):before {
+    background: #f9d410;
+    width: 100%;
+    bottom: -5px;
+    opacity: 1;
+}
+
+nav a:nth-child(3):hover:before {
+    bottom: 0px;
+    opacity: 1;
 }
 
 nav a:nth-child(3) {
@@ -71,12 +105,12 @@ nav a:nth-child(6) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* il est possible de mettre la taille ici
-    ou dans le balise parent (max-width)*/
+    max-width: 1250px;
 }
 
 .left {
-    width: 500px;
+    width: 750px;
+    height: 50%;
     color: #fff;
 }
 
@@ -89,6 +123,11 @@ nav a:nth-child(6) {
     background-color: #fce402;
     font-family: 'Poppins Medium';
     font-weight: bold;
+}
+
+.right img {
+    width: 500px;
+    margin-bottom: 50px;
 }
 
 h2 {
@@ -127,12 +166,37 @@ footer {
     height: 115px;
 }
 
+.icom-item a img {
+    width: 30px;
+}
+
+.contact {
+    display: block;
+    width: 500px;
+}
+
 .contact p {
-    display: flex;
     margin: 10px 30px 10px 10px;
 }
 
 .icom-item img {
     width: 40px;
     margin-left: 20px;
+}
+
+@media (max-width: 584px) {
+    section {
+        max-width: 60%;
+    }
+    .container-items {
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+        color: #fff;
+    }
+    footer {
+        max-width: 100%;
+    }
 }

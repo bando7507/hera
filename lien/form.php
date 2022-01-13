@@ -10,6 +10,16 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="title">Formuulaire</div>
+        <form action="#" method="POST">
+            <div class="usr_detail">
+                <div class="input_box">
+                    <span class="details"> Full name</span>
+                </div>
+            </div>
+
+        </form>
+    </div>
 </body>
 </html>
